@@ -1,0 +1,21 @@
+---
+layout: default
+title: Iceme - Blog
+---
+
+<div class="vertical-spacer"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1>Blog</h1>
+
+      {% for post in site.posts %}
+        <h2>
+          <small>{{ post.date | date_to_string }}</small>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+      {% endfor %}
+    </div>
+  </div>
+</div>
