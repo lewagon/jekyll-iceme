@@ -1,0 +1,25 @@
+---
+layout: default
+title: Iceme - La Playlist
+---
+
+<div class="vertical-spacer"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1>Playlist</h1>
+    </div>
+  </div>
+  {% for sound in site.data.sounds %}
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="sound">
+          <h2>{{ sound.title }} <small>{{ sound.author }}</small></h2>
+
+          <iframe width="100%" height="94" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ sound.soundcloud_id }}&color=ff5500"></iframe>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
