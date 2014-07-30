@@ -1,21 +1,120 @@
 ---
 layout: default
-title: TODO CHANGE THIS TITLE
+title: Iceme - Dégustez une glace
 ---
+
+<div class="wrapper">
+  <div class="lead">
+    <h1>DÉGUSTEZ UNE GLACE</h1>
+    <h2>MAINTENANT TOUT DE SUITE</h2>
+    <p>
+      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderForm">
+        Je veux une glace
+      </button>
+    </p>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Commandez !</h4>
+      </div>
+      <div class="modal-body">
+        <div id="wufoo-zzstu9e1up5owf">
+        Fill out my <a href="https://iceme.wufoo.com/forms/zzstu9e1up5owf">online form</a>.
+        </div>
+        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+        <script type="text/javascript">var zzstu9e1up5owf;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'iceme',
+        'formHash':'zzstu9e1up5owf',
+        'autoResize':true,
+        'height':'463',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { zzstu9e1up5owf = new WufooForm();zzstu9e1up5owf.initialize(options);zzstu9e1up5owf.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="vertical-spacer"></div>
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-sm-6 col-md-3">
+      <div class="feature">
+        <div class="feature-picture">
+          <img src="images/icon_57707/icon_57707.png" width="96">
+        </div>
+        <p>
+          Choisissez jusque trois parfums
+          parmis notre catalogue de <strong>1000</strong> glaces maison.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="feature">
+        <img src="images/icon_29388/icon_29388.png" width="96">
+        <p>
+          L'application vous <strong>géolocalise</strong> automatiquement et vous
+          indique le temps d'attente estimé.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="feature">
+        <img src="images/icon_24755/icon_24755.png" width="96">
+        <p>
+          Un de nos supers livreurs fonce pour vous apporter votre glace,
+          qui sera <strong>préparée juste à temps</strong>.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-3">
+      <div class="feature">
+        <img src="images/icon_17805/icon_17805.png" width="96">
+        <p>
+          Pas de monnaie ? Pas un problème, le paiement est <strong>automatiquement</strong>
+          débité sur votre carte bancaire.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="vertical-spacer"></div>
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4 col-sm-offset-4">
-      <h1>Howdy!</h1>
+    <div class="col-xs-12 text-center">
+      <!-- Begin MailChimp Signup Form -->
+      <h2>Inscrivez-vous à la Newsletter</h2>
+      <div id="mc_embed_signup">
+        <form action="http://iceme.us8.list-manage.com/subscribe/post?u=0f796021763dc414ae74dfa60&amp;id=d4fc47ad7d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
 
-      <p>Congrats! Your Jekyll Website is up and running.</p>
-      <p>
-        The default template is the same as
-        <a href="https://github.com/lewagon/bootstrap-boilerplate">
-          lewagon/bootstrap-boilerplate
-        </a>
-        so you already have Bootstrap and FontAwesome installed.
-      </p>
+          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+
+          <input type="submit" value="Suivez-nous" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+        </form>
+      </div>
+
+      <!--End mc_embed_signup-->
     </div>
   </div>
 </div>
