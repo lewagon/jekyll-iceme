@@ -8,16 +8,18 @@ title: Blog
 <div class="container">
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4">
-      <h1>Le blog d'Iceme</h1>
-      <ul class="posts">
-        {% for post in site.posts %}
-          <li>
-            {{ post.date | date_to_string }}
-            -
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+      <div class="min-heighted">
+        <h1>Le blog d'Iceme</h1>
+        <ul class="posts">
+          {% for post in site.posts %}
+            <li>
+              {{ post.date | date_to_string }}
+              -
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
