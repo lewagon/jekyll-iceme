@@ -1,0 +1,29 @@
+---
+layout: default
+title: Iceme - Parfums
+---
+
+<div class="vertical-spacer"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center">Parfums</h1>
+    </div>
+  </div>
+  <div class="row">
+    {% for ice_cream in site.data.ice_creams %}
+
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/ice_creams/{{ ice_cream.filename }}" alt="">
+          <div class="caption">
+            <h2>{{ ice_cream.flavor }}</h2>
+          </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div>
+</div>
